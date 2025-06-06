@@ -6,6 +6,7 @@ from scipy.signal import filtfilt, butter
 from tqdm import tqdm
 
 
+
 # Global variables
 N = 64  # Number of subcarriers
 B = 10 * 10**6  # Bandwidth and sampling frequency [Hz]
@@ -359,13 +360,13 @@ def simulation(sigma,m,l):
 def graph1():
     l=4
     sigma = math.sqrt(1 / 30)
-    x1, y1 = simulation(sigma, 50,l)
+    x1= simulation(sigma, 50,l)
     sigma = math.sqrt(1 / 20)
-    a1, b1 = simulation(sigma, 50,l)
+    a1= simulation(sigma, 50,l)
     sigma = math.sqrt(1 / 10)
-    z1, w1 = simulation(sigma, 50,l)
+    z1= simulation(sigma, 50,l)
     sigma = math.sqrt(1 / 10)
-    c1, d1 = simulation(sigma, 1,l)
+    c1= simulation(sigma, 1,l)
     ps_ratios, ps_ratios_db = calculate_ps_ratios_db()
 
     # plot
@@ -384,6 +385,7 @@ def graph1():
     plt.xlabel("$P_s/(1-P_s)$ (dB)")
     plt.ylabel("BER")
     plt.grid(which="both")
+    plt.legend(loc='best')
     output_path = "outputs/ber_plot1.png"
     plt.savefig(output_path, dpi=300, bbox_inches='tight')
     plt.close()
@@ -427,6 +429,7 @@ def graph2():
     plt.xlabel("$P_s/(1-P_s)$ (dB)", fontsize=16)
     plt.ylabel("BER")
     plt.grid(which="both")
+    plt.legend(loc='best')
     output_path = "outputs/ber_plot2.png"
     plt.savefig(output_path, dpi=300, bbox_inches='tight')
     plt.close()
@@ -451,9 +454,9 @@ def graph2():
 
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
-    # graph1()
+    graph1()
     graph2()
-
+    
     # sigma=math.sqrt(1/30)
     # x1,y1=simulation(sigma,50)
     # sigma = math.sqrt(1 / 20)
