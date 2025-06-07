@@ -12,10 +12,14 @@ requirements.txt: Python dependencies for local virtual environments
 
 outputs:  Simulation outputs and plots
 
-# Starter Code Setup:
-git clone https://github.com/galgreen1/simulations_rfChallenge.git
-cd simulations_rfChallange
-ls
+# Starter Code Setup: 
+
+(Enter the place you want the project at)
+
+git clone https://github.com/galgreen1/simulations_rfChallange.git rfChallange
+
+
+cd rfChallange
 
 Now you have all of the files locally
 Dependencies are detailed in requirements.txt
