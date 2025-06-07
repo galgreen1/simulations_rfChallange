@@ -7,18 +7,20 @@ and communication waveform design using OFDM,” IEEE Wireless Commun. Lett., 20
 # Repository Contents
 
 simulations.py: Runs the core BER simulation, writes to outputs
+
 requirements.txt: Python dependencies for local virtual environments
+
 outputs:  Simulation outputs and plots
 
 # Starter Code Setup:
 git clone https://github.com/galgreen1/simulations_rfChallenge.git
 cd simulations_rfChallange
-
-# Helper Functions
 ls
 
 Now you have all of the files locally
 Dependencies are detailed in requirements.txt
+
+# Helper Functions
 
 
     
