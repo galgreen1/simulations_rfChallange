@@ -13,7 +13,6 @@ RUN pip install --no-cache-dir \
         numpy \
         scipy \
         matplotlib \
-        pandas \
         tqdm
 
 
