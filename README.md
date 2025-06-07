@@ -1,10 +1,24 @@
-# RF Challenge Simulations
+# simulations_rfChallenge
 
-פרויקט סימולציות RF הכולל:
-- `simulations.py`    : ריצת סימולציה שמחשבת BER ושומרת `outputs1.txt`.
-- `replot.py`         : קורא מ־`outputs1.txt` ויוצר גרף `ber_replot.png`.
-- `docker/Dockerfile` : Dockerfile לבניית התמונה עם כל התלויות.
-- `slurm/run.slurm`   : סקריפט SLURM שמשגר את הקונטיינר ומריץ סימולציה + replot.
+Implementing simulations of a mathematical method for signal separation decribed in
+J. Wang, Z. Bai, J. Lian, Y. Guo, G. Zhu, and Y. Wang, “A power-domain non-orthogonal integrated sensing
+and communication waveform design using OFDM,” IEEE Wireless Commun. Lett., 2024.].
 
-## מבנה התיקיות
+# Repository Contents
+.
+├── simulations.py           # Runs the core BER simulation, writes to outputs
+├── requirements.txt         # Python dependencies for local virtual environments
+└── outputs/                 # Simulation outputs and plots
 
+# Starter Code Setup:
+git clone https://github.com/galgreen1/simulations_rfChallenge.git
+cd simulations_rfChallange
+
+# Helper Functions
+ls
+
+Now you have all of the files locally
+Dependencies are detailed in requirements.txt
+
+
+    
