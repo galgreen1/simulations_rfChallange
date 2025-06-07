@@ -20,7 +20,6 @@ ls
 Now you have all of the files locally
 Dependencies are detailed in requirements.txt
 
-# Helper Functions
 
 
     
